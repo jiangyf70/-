@@ -92,4 +92,6 @@ mitmproxy是一个代理模块，会在你指定的端口开启一个代理服�
     - `NameIntercapter`: 获取视频名称，及m3u8的url  
     - `KeyIntercapter`: 获取解密所需的key  
 有了这2个拦截器，我们就能获取到视频下载所需要的信息。  
+![抓取位置](./images/a.png)  
+![抓取key](./images/b.png)  
 
