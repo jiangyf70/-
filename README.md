@@ -31,8 +31,28 @@ win10 + python3.7.5
     请参照网上的教程**安装mitmproxy证书**，不然抓不到https包！！！  
     请参照网上的教程**安装mitmproxy证书**，不然抓不到https包！！！  
     请参照网上的教程**安装mitmproxy证书**，不然抓不到https包！！！  
+https://www.jianshu.com/p/036e5057f0b9?ivk_sa=1024320u
+三、mitmproxy证书配置
+mitmproxy和Charles软件一样，需要进行证书配置，为什么要进行证书配置？由于我们要抓取的大部分App页面都采用了HTTPS，也就是经过加密，若没有证书，就无法识别抓取的数据。另外，需要注意的是，mitmproxy与Charles软件一样需要在PC和手机端安装证书。
 
+1、首先cmd运行一下以下命令，以便在windows系统中产生CA证书
 
+mitmdump
+2、接着在.mitmproxy目录找到CA证书，如下图所示
+
+image
+3、双击mitmproxy-ca.p12进入导入证书的页面，点击“下一步”
+
+image
+4、不用输入密码，直接“下一步”
+
+image
+5、选择“将所有的证书都放入下列存储”，接着选择“受信任的根证书颁发机构”
+
+image
+6、最后，弹出警告窗口，直接点击“是”
+
+image
 
 2. 启动脚本  
 
